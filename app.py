@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 #from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 # def recycle_e_waste():
 #     # Logic to handle recycling e-waste
