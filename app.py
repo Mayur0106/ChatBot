@@ -19,13 +19,6 @@ def donate_e_waste():
     return "Consider donating your e-waste to organizations that refurbish electronics for reuse.", ["Charities Accepting E-Waste", "Reuse Centers"]
 
 @app.route('/dispose', methods=['POST'])
-
-# @app.route('/')
-
-def hello_world():
-    return 'Hello, World!'
-
-
 def dispose():
     data = request.json
     message = data.get('message')
@@ -44,4 +37,4 @@ def dispose():
     return jsonify({'response': response, 'options': options})
 
 # if __name__ == "__main__":
-#     app.run()
+#     app.run(host="127.0.0.1", port=5000)
